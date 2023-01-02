@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table table-bordered table-stripes">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Registarion Number</th>
+                <th>Name</th>
+                <th>DateOfBirth</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>PhoneNumber</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patient of patientService.patients">
+                <td>{{patient.patientId}}</td>
+                <td>{{patient.patientRegistrationNumber}}</td>
+                <td>{{patient.patientName}}</td>
+                <td>{{patient.dateOfBirth}}</td>
+                <td>{{patient.gender}}</td>
+                <td>{{patient.address}}</td>
+                <td>{{patient.phoneNumber}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
